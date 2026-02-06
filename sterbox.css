@@ -4,18 +4,9 @@ body {
   flex-direction: row; /* agora é lado a lado */
   min-height: 100vh;
   align-items: stretch;
-  justify-content: flex-start;
-  gap: 20px; /* opcional: define um pequeno espaço entre header e main */
+  justify-content: space-between;
   
   font-family: Arial, sans-serif; /* <- adiciona esta linha */
-}
-
-main {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end; 
-  align-items: center;
-  padding: 1rem;
 }
 
 /* Header vira aba lateral direita */
@@ -36,7 +27,7 @@ header {
 main {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   width: auto;
   padding: 1rem;
