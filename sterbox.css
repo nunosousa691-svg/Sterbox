@@ -12,7 +12,7 @@ body {
 /* Header vira aba lateral direita */
 header {
   width: 320px; /* largura da aba */
-  height: 100vh;
+  height: 85vh;
   text-align: center;
   padding: 2rem 1.5rem;
   background-color: #0d47a1;
@@ -59,4 +59,3 @@ footer {
   height: 120px;
   width: auto;
 }
-
