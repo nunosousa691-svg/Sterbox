@@ -6,33 +6,69 @@
   <title>Sterbox 3D</title>
   <link rel="stylesheet" href="sterbox.css">
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SterBox 3D</title>
+
+  <link rel="stylesheet" href="sterbox.css">
+
+  <!-- Model Viewer -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
+
 <body>
+
+  <!-- LOGO -->
   <div class="logo">
     <img src="logo.png" alt="SterBox Logo">
   </div>
 
+  <!-- HEADER LATERAL -->
   <header>
     <h1>SterBox 3D Viewer</h1>
-    <p>Explore the SolidWorks project model in 3D.</p>
-    <p>Using the mouse you can zoom in and rotate the prototype.</p>
 
+    <p>Explore the SolidWorks project model in 3D.</p>
+    <p>Using the mouse you can zoom and rotate the prototype.</p>
 
     <footer>
       <p>© 2026 SterBox. All rights reserved.</p>
     </footer>
   </header>
 
-  
-
+  <!-- CONTEÚDO PRINCIPAL -->
   <main>
-    <model-viewer src="https://raw.githubusercontent.com/nunosousa691-svg/Sterbox/main/sterbox.glb"
-                  alt="Modelo 3D Sterbox"
-                  auto-rotate
-                  camera-controls
-                  ar
-                  shadow-intensity="1">
-    </model-viewer>
+    <div class="viewer-layout">
+
+      <!-- MODELO 3D -->
+      <div class="viewer-3d">
+        <model-viewer
+          src="https://raw.githubusercontent.com/sterbox/Sterbox/main/sterbox.glb"
+          alt="Modelo 3D Sterbox"
+          auto-rotate
+          camera-controls
+          shadow-intensity="1">
+        </model-viewer>
+      </div>
+
+      <!-- VÍDEOS -->
+      <div class="viewer-videos">
+
+        <video autoplay muted loop playsinline>
+          <source src="https://raw.githubusercontent.com/sterbox/Sterbox/main/video_Sterbox1.mp4
+" type="video/mp4">
+        </video>
+
+        <video autoplay muted loop playsinline>
+          <source src="https://raw.githubusercontent.com/sterbox/Sterbox/main/video_Sterport.mp4
+" type="video/mp4">
+        </video>
+
+      </div>
+
+    </div>
   </main>
 
 </body>
