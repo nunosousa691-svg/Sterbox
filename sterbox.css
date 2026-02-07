@@ -1,3 +1,4 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -14,13 +15,13 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* HEADER – lateral direita */
+/* HEADER – barra lateral esquerda */
 header {
   width: 320px;
   height: 98vh;
   background-color: #0d47a1;
   color: white;
-  padding: 12rem 1.5rem;
+  padding: 15rem 1rem;
 
   display: flex;
   flex-direction: column;
@@ -28,9 +29,23 @@ header {
   text-align: center;
 }
 
+/* TEXTO DO HEADER */
+header h1 {
+  margin-bottom: 2rem;     /* espaço abaixo do título */
+  line-height: 1.2;
+  font-size: 2.2rem;
+}
+
+header p {
+  margin-bottom: 2rem;    /* espaço entre parágrafos */
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
 /* FOOTER NO FUNDO DO HEADER */
 footer {
   margin-top: auto;
+  margin-bottom: -5rem;
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.7);
 }
